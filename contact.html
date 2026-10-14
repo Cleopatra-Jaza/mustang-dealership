@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Mustang Experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader"><div class="loader-logo">MUSTANG<span>.</span></div><div class="loader-bar"></div></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">MUSTANG</a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mustangs.html">Mustangs</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="racing.html">Racing</a></li>
+    </ul></nav>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">HOME</a><a href="mustangs.html">MUSTANGS</a><a href="order.html">ORDER</a><a href="contact.html">CONTACT</a><a href="racing.html">RACING</a>
+</nav>
+
+<section class="section" style="padding-top:calc(var(--nav-h) + 50px)">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Contact</span>
+      <h2>VISIT THE <span class="text-red">MUSTANG</span> EXPERIENCE</h2>
+      <p>Placeholder dealership details — replace with your own before going live.</p>
+    </div>
+
+    <!-- CONTACT CARDS -->
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="ico">📞</div>
+        <h4>Phone</h4>
+        <p><a href="tel:+910000000000" style="color:var(--light)">+91 00000 00000</a></p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ico">✉️</div>
+        <h4>Email</h4>
+        <p><a href="mailto:hello@mustang.example" style="color:var(--light)">hello@mustang.example</a></p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ico">📍</div>
+        <h4>Showroom</h4>
+        <p>Mustang Experience Centre,<br>Auto District, Your City, India</p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ico">🕐</div>
+        <h4>Business Hours</h4>
+        <p>Mon–Sat · 10:00 – 19:00<br>Sunday · By appointment</p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ico">💬</div>
+        <h4>WhatsApp</h4>
+        <p><a href="https://wa.me/910000000000" target="_blank" rel="noopener" style="color:var(--light)">Chat with us</a></p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ico">📅</div>
+        <h4>Book a Test Drive</h4>
+        <p><a href="order.html" style="color:var(--light)">Reserve online</a></p>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="section-head">
+      <h3 style="color:#fff">Find Us On The Map</h3>
+    </div>
+    <div class="map-wrap reveal">
+      <!-- Replace the q= value with your actual showroom address -->
+      <iframe
+        title="Dealership location"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=India+Gate+New+Delhi&output=embed">
+      </iframe>
+      <a class="btn btn-primary map-btn"
+         href="https://www.google.com/maps/dir/?api=1&destination=India+Gate+New+Delhi"
+         target="_blank" rel="noopener">GET DIRECTIONS</a>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-wrap">
+      <div>
+        <div class="section-head" style="margin-bottom:16px">
+          <span class="eyebrow">Send a Message</span>
+          <h2 style="color:#fff">Let's Talk <span class="text-red">Mustang</span></h2>
+          <p>Fill in the form and our team will get back within 24 hours.</p>
+        </div>
+        <div class="socials">
+          <a class="social" href="#" aria-label="Instagram">IG</a>
+          <a class="social" href="#" aria-label="YouTube">YT</a>
+          <a class="social" href="#" aria-label="Facebook">FB</a>
+          <a class="social" href="#" aria-label="X / Twitter">X</a>
+        </div>
+      </div>
+
+      <form class="form-card" id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="field full"><label for="cName">Name *</label><input id="cName" required /><span class="err-msg">Please enter your name.</span></div>
+          <div class="field full"><label for="cEmail">Email *</label><input id="cEmail" type="email" required /><span class="err-msg">Enter a valid email.</span></div>
+          <div class="field full"><label for="cPhone">Phone *</label><input id="cPhone" type="tel" required /><span class="err-msg">Enter a valid phone number.</span></div>
+          <div class="field full"><label for="cMsg">Message *</label><textarea id="cMsg" required></textarea><span class="err-msg">Please write a message.</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit" style="margin-top:20px">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">MUSTANG</div><div class="footer-tag">The Legend Never Stops.</div><p>An independent premium Mustang dealership experience.</p></div>
+      <div><h5>Quick Links</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="mustangs.html">Mustangs</a></li>
+        <li><a href="order.html">Order</a></li><li><a href="contact.html">Contact</a></li><li><a href="racing.html">Racing</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><a href="mailto:hello@mustang.example">hello@mustang.example</a></li>
+        <li><a href="contact.html">Showroom Address</a></li>
+      </ul></div>
+      <div><h5>Follow</h5><div class="socials">
+        <a class="social" href="#" aria-label="Instagram">IG</a>
+        <a class="social" href="#" aria-label="YouTube">YT</a>
+        <a class="social" href="#" aria-label="Facebook">FB</a>
+      </div></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mustang Dealership. All rights reserved.</p>
+      <p class="disclaimer">This is an independent dealership demonstration website and is not affiliated with, endorsed by, or sponsored by Ford Motor Company. "Mustang" is a trademark of Ford Motor Company. Prices shown are estimates and do not constitute an offer.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mustang Racing Experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader"><div class="loader-logo">MUSTANG<span>.</span></div><div class="loader-bar"></div></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">MUSTANG</a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mustangs.html">Mustangs</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="racing.html" class="active">Racing</a></li>
+    </ul></nav>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">HOME</a><a href="mustangs.html">MUSTANGS</a><a href="order.html">ORDER</a><a href="contact.html">CONTACT</a><a href="racing.html">RACING</a>
+</nav>
+
+<!-- RACING HERO -->
+<section class="racing-hero">
+  <div class="racing-bg">
+    <!-- Poster fallback / replace with your own video -->
+    <video autoplay muted loop playsinline
+           poster="assets/hero">
+      <!-- Public sample racing video; swap with your own -->
+      <source src="C:\Users\iDell_i7\OneDrive\Desktop\mustang-dealership\assets\hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="racing-overlay"></div>
+
+  <div class="container">
+    <span class="eyebrow">Mustang Racing</span>
+    <h1 class="racing-title" style="margin-top:14px">BUILT FOR <span>THE TRACK</span></h1>
+    <p class="hero-sub" style="margin-top:20px">Feel the Power. Hear the Roar.</p>
+    <a href="mustangs.html" class="btn btn-primary" style="margin-top:30px">EXPLORE THE COLLECTION</a>
+  </div>
+
+  <div class="racing-controls">
+    <button id="playPause" aria-label="Play / pause">⏸</button>
+    <button id="muteVideo" aria-label="Mute video">🔇</button>
+    <button id="fsVideo" aria-label="Fullscreen video">⛶</button>
+  </div>
+</section>
+
+<!-- RACE-BRED SECTION -->
+<section class="section feature-strip">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Race-Bred</span>
+      <h2>RACE-BRED <span class="text-red">PERFORMANCE</span></h2>
+      <p>Every component engineered to shave tenths and hold the line.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="idx">01</div>
+        <h3>High-Performance Engine</h3>
+        <p>Coyote V8s and supercharged 5.2L powerplants built to rev to the redline, lap after lap.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="idx">02</div>
+        <h3>Advanced Handling</h3>
+        <p>MagneRide adaptive dampers, Torsen diffs, and track-tuned suspension geometry.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="idx">03</div>
+        <h3>Track-Focused Design</h3>
+        <p>Aggressive aero, coolers, and weight-saving materials derived from motorsport programmes.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="idx">04</div>
+        <h3>Iconic Exhaust Note</h3>
+        <p>Active exhaust valves deliver a soundtrack that is unmistakably, unforgettably Mustang.</p>
+      </div>
+    </div>
+
+    <div class="center" style="margin-top:56px">
+      <a href="mustangs.html" class="btn btn-primary">EXPLORE THE COLLECTION</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">MUSTANG</div><div class="footer-tag">The Legend Never Stops.</div><p>An independent premium Mustang dealership experience.</p></div>
+      <div><h5>Quick Links</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="mustangs.html">Mustangs</a></li>
+        <li><a href="order.html">Order</a></li><li><a href="contact.html">Contact</a></li><li><a href="racing.html">Racing</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><a href="mailto:hello@mustang.example">hello@mustang.example</a></li>
+        <li><a href="contact.html">Showroom Address</a></li>
+      </ul></div>
+      <div><h5>Follow</h5><div class="socials">
+        <a class="social" href="#" aria-label="Instagram">IG</a>
+        <a class="social" href="#" aria-label="YouTube">YT</a>
+        <a class="social" href="#" aria-label="Facebook">FB</a>
+      </div></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mustang Dealership. All rights reserved.</p>
+      <p class="disclaimer">This is an independent dealership demonstration website and is not affiliated with, endorsed by, or sponsored by Ford Motor Company. "Mustang" is a trademark of Ford Motor Company. Prices shown are estimates and do not constitute an offer.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/racing.js"></script>
+</body>
+</html>

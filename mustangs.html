@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mustang Collection — 10 Models</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader"><div class="loader-logo">MUSTANG<span>.</span></div><div class="loader-bar"></div></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">MUSTANG</a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mustangs.html" class="active">Mustangs</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="racing.html">Racing</a></li>
+    </ul></nav>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">HOME</a><a href="mustangs.html">MUSTANGS</a><a href="order.html">ORDER</a><a href="contact.html">CONTACT</a><a href="racing.html">RACING</a>
+</nav>
+
+<section class="section" style="padding-top:calc(var(--nav-h) + 50px)">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">The Collection</span>
+      <h2>Choose Your <span class="text-red">Mustang</span></h2>
+      <p>Ten legends — current models and collectible icons. Drag to rotate in 360°.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coupe">Coupe</button>
+      <button class="filter-btn" data-filter="convertible">Convertible</button>
+      <button class="filter-btn" data-filter="performance">Performance</button>
+      <button class="filter-btn" data-filter="classic">Classic</button>
+      <button class="filter-btn" data-filter="collector">Collector</button>
+    </div>
+
+    <div class="car-grid" id="carGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- 360 VIEWER MODAL -->
+<div class="modal" id="viewerModal" aria-hidden="true" role="dialog" aria-label="360 degree viewer">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close viewer">✕</button>
+    <div class="viewer-wrap">
+      <div class="viewer-stage" id="viewerStage">
+        <img id="viewerImg" src="" alt="Mustang 360 view" />
+        <div class="viewer-hint" id="viewerHint">Drag to rotate · Scroll to zoom</div>
+        <div class="viewer-controls">
+          <button id="zoomIn" aria-label="Zoom in">＋</button>
+          <button id="zoomOut" aria-label="Zoom out">－</button>
+          <button id="fsBtn" aria-label="Fullscreen">⛶</button>
+        </div>
+      </div>
+      <aside class="viewer-info">
+        <span class="v-year" id="vYear">2024</span>
+        <h3 id="vName">Mustang GT</h3>
+        <div class="v-price" id="vPrice">₹ --</div>
+        <p class="car-desc" id="vDesc"></p>
+        <div class="spec-grid" id="vSpecs"></div>
+        <a class="btn btn-primary btn-block" id="vOrder" href="order.html">ORDER THIS MODEL</a>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">MUSTANG</div>
+        <div class="footer-tag">The Legend Never Stops.</div>
+        <p>An independent premium Mustang dealership experience.</p>
+      </div>
+      <div><h5>Quick Links</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="mustangs.html">Mustangs</a></li>
+        <li><a href="order.html">Order</a></li><li><a href="contact.html">Contact</a></li><li><a href="racing.html">Racing</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><a href="mailto:hello@mustang.example">hello@mustang.example</a></li>
+        <li><a href="contact.html">Showroom Address</a></li>
+      </ul></div>
+      <div><h5>Follow</h5><div class="socials">
+        <a class="social" href="#" aria-label="Instagram">IG</a>
+        <a class="social" href="#" aria-label="YouTube">YT</a>
+        <a class="social" href="#" aria-label="Facebook">FB</a>
+      </div></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mustang Dealership. All rights reserved.</p>
+      <p class="disclaimer">This is an independent dealership demonstration website and is not affiliated with, endorsed by, or sponsored by Ford Motor Company. "Mustang" is a trademark of Ford Motor Company. Prices shown are estimates and do not constitute an offer.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/mustangs.js"></script>
+</body>
+</html>

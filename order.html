@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order Your Mustang</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader"><div class="loader-logo">MUSTANG<span>.</span></div><div class="loader-bar"></div></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">MUSTANG</a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mustangs.html">Mustangs</a></li>
+      <li><a href="order.html" class="active">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="racing.html">Racing</a></li>
+    </ul></nav>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu">
+  <a href="index.html">HOME</a><a href="mustangs.html">MUSTANGS</a><a href="order.html">ORDER</a><a href="contact.html">CONTACT</a><a href="racing.html">RACING</a>
+</nav>
+
+<section class="section" style="padding-top:calc(var(--nav-h) + 50px)">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Reserve</span>
+      <h2>MAKE IT <span class="text-red">YOURS</span></h2>
+      <p>Your Mustang. Your Rules. Fill the form below to reserve your build slot.</p>
+    </div>
+
+    <div class="order-layout">
+      <!-- FORM -->
+      <form class="form-card" id="orderForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="fullName">Full Name *</label><input id="fullName" name="fullName" required /><span class="err-msg">Please enter your full name.</span></div>
+          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required /><span class="err-msg">Enter a valid email address.</span></div>
+          <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" required /><span class="err-msg">Enter a valid phone number.</span></div>
+          <div class="field"><label for="country">Country *</label><input id="country" name="country" value="India" required /><span class="err-msg">Please enter your country.</span></div>
+          <div class="field"><label for="city">City *</label><input id="city" name="city" required /><span class="err-msg">Please enter your city.</span></div>
+          <div class="field"><label for="model">Select Mustang Model *</label>
+            <select id="model" name="model" required>
+              <option value="">-- Choose a model --</option>
+            </select>
+            <span class="err-msg">Please choose a Mustang model.</span>
+          </div>
+          <div class="field"><label for="year">Model Year *</label>
+            <select id="year" name="year" required><option value="">-- Choose year --</option></select>
+            <span class="err-msg">Please choose a model year.</span>
+          </div>
+          <div class="field"><label for="extColor">Exterior Colour *</label>
+            <select id="extColor" name="extColor" required>
+              <option value="">-- Choose --</option>
+              <option>Race Red</option><option>Shadow Black</option><option>Oxford White</option>
+              <option>Grabber Blue</option><option>Iconic Silver</option><option>Dark Matter Grey</option>
+              <option>Vapor Blue</option><option>Yellow Splash</option>
+            </select>
+            <span class="err-msg">Please select an exterior colour.</span>
+          </div>
+          <div class="field"><label for="intColor">Interior Colour *</label>
+            <select id="intColor" name="intColor" required>
+              <option value="">-- Choose --</option>
+              <option>Ebony Black</option><option>Ceramic Grey</option><option>Red Accent</option>
+              <option>Recaro Sport Black</option>
+            </select>
+            <span class="err-msg">Please select an interior colour.</span>
+          </div>
+          <div class="field"><label for="trans">Transmission *</label>
+            <select id="trans" name="trans" required>
+              <option value="">-- Choose --</option>
+              <option>6-Speed Manual</option><option>10-Speed Automatic</option>
+              <option>7-Speed Dual-Clutch</option>
+            </select>
+            <span class="err-msg">Please select a transmission.</span>
+          </div>
+          <div class="field"><label for="qty">Quantity *</label>
+            <input id="qty" name="qty" type="number" min="1" max="10" value="1" required />
+            <span class="err-msg">Quantity must be between 1 and 10.</span>
+          </div>
+          <div class="field"><label for="date">Preferred Delivery Date *</label>
+            <input id="date" name="date" type="date" required />
+            <span class="err-msg">Please choose a delivery date.</span>
+          </div>
+          <div class="field full"><label for="notes">Additional Requirements</label>
+            <textarea id="notes" name="notes" placeholder="Stripes, wheels, audio package, etc."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:24px">PLACE ORDER</button>
+        <p class="summary-note">This is a dealership order request — no payment is processed on this site.</p>
+      </form>
+
+      <!-- SUMMARY -->
+      <aside class="summary-card">
+        <h3>Your <span class="text-red">Mustang</span></h3>
+        <div class="summary-row"><span class="k">Selected Mustang</span><span class="v" id="sModel">—</span></div>
+        <div class="summary-row"><span class="k">Estimated Price</span><span class="v" id="sPrice">—</span></div>
+        <div class="summary-row"><span class="k">Selected Colour</span><span class="v" id="sColor">—</span></div>
+        <div class="summary-row"><span class="k">Selected Options</span><span class="v" id="sOpts">—</span></div>
+        <div class="summary-total"><span class="k">Estimated Total</span><span class="v" id="sTotal">₹0</span></div>
+        <p class="summary-note">Prices are estimates / dealer indicative prices and may vary by region, taxes, and options.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER CONFIRMATION MODAL -->
+<div class="modal" id="confirmModal" aria-hidden="true" role="dialog">
+  <div class="modal-box" style="max-width:640px;padding:50px 40px;text-align:center">
+    <div class="success-burst">✓</div>
+    <h2 style="color:#fff;font-size:2.4rem">ORDER REQUEST RECEIVED</h2>
+    <p style="color:var(--grey);margin:14px 0 6px">Thank you for choosing Mustang.</p>
+    <p style="color:var(--red-bright);font-family:var(--font-head);font-size:1.6rem;letter-spacing:.06em" id="orderRef">MUSTANG-XXXXXX</p>
+    <p class="summary-note" style="margin-top:20px">This is a dealership order <strong>request</strong>. A representative will contact you to confirm availability, final pricing, and delivery. No payment has been taken.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px">
+      <button class="btn btn-primary" id="downloadBtn">DOWNLOAD ORDER SUMMARY</button>
+      <a class="btn btn-ghost" href="mustangs.html">BACK TO MUSTANGS</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">MUSTANG</div><div class="footer-tag">The Legend Never Stops.</div><p>An independent premium Mustang dealership experience.</p></div>
+      <div><h5>Quick Links</h5><ul>
+        <li><a href="index.html">Home</a></li><li><a href="mustangs.html">Mustangs</a></li>
+        <li><a href="order.html">Order</a></li><li><a href="contact.html">Contact</a></li><li><a href="racing.html">Racing</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><a href="mailto:hello@mustang.example">hello@mustang.example</a></li>
+        <li><a href="contact.html">Showroom Address</a></li>
+      </ul></div>
+      <div><h5>Follow</h5><div class="socials">
+        <a class="social" href="#" aria-label="Instagram">IG</a>
+        <a class="social" href="#" aria-label="YouTube">YT</a>
+        <a class="social" href="#" aria-label="Facebook">FB</a>
+      </div></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mustang Dealership. All rights reserved.</p>
+      <p class="disclaimer">This is an independent dealership demonstration website and is not affiliated with, endorsed by, or sponsored by Ford Motor Company. "Mustang" is a trademark of Ford Motor Company. Prices shown are estimates and do not constitute an offer.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/mustangs.js"></script>
+<script src="js/order.js"></script>
+</body>
+</html>
