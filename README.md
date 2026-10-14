@@ -15,6 +15,11 @@ A modern, responsive automotive website concept inspired by the iconic Ford Must
 </div>
 
 ---
+🌐 Live Demo
+
+Explore the live website:
+
+👉 https://YOUR-WEBSITE-LINK.netlify.app/
 
 ## 📌 About the Project
 
@@ -111,15 +116,16 @@ Replace the example path with the real screenshot path in your project.
 ## 🤝 Contributing
 
 Suggestions and improvements are welcome. For significant changes, consider opening an issue first to discuss what you would like to improve.
+📄 License
 
-## 📄 License
+This project is licensed under the MIT License.
 
-No license has been specified yet. Unless a license is added to this repository, all rights are reserved by the respective copyright holders. Add a `LICENSE` file if you want to define permissions for reuse.
+See the LICENSE file for the complete license terms.
 
----
+The MIT License permits reuse, modification, distribution, and commercial use of the licensed project code, subject to its conditions.
 
-<div align="center">
+Note: Third-party images, videos, logos, trademarks, and other assets may have separate copyright or licensing requirements.
 
-**Built with passion for automotive design.** 🏁
-
-</div>
+<p align="center">
+  Built with ❤️ and passion for automotive design. 🏁
+</p>
