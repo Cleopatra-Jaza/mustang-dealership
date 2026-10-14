@@ -15,11 +15,6 @@ A modern, responsive automotive website concept inspired by the iconic Ford Must
 </div>
 
 ---
-🌐 Live Demo
-
-Explore the live website:
-
-👉 https://YOUR-WEBSITE-LINK.netlify.app/
 
 ## 📌 About the Project
 
